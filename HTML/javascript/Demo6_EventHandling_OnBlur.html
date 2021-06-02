@@ -1,0 +1,33 @@
+<html>
+    <head>
+        
+        <script>
+                function doThisThings()
+                {
+                  var input =   document.getElementById("a101").value;
+                  input = parseInt(input);
+                  if(input>50)
+                  {
+                      document.getElementById("errMsg101").innerHTML = "Not Allowed!!";
+                      console.log("Not allowed!!!");
+                  }
+                }
+        </script>
+      
+    </head>
+    <body>
+        <div>
+            <table>
+                <tr>
+                    <td> Enter Age </td>
+                    <td> <input type="text" id="a101" onblur="doThisThings()"/> </td>
+                    <td> <p style="color: red;" id="errMsg101"></p></td>
+                    
+                </tr>
+            </table>
+        </div>
+       
+        
+    </body>
+
+</html>

@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script>
+            function doThings()
+            {
+                // inbuild object
+                var arr = new Array;
+
+                arr[0] = "java";
+                arr[1] = "spring";
+                arr[2] = "springboot";
+                arr[3] = "Abhjbhj"
+
+                console.log(arr);
+                arr.forEach(ele=>console.log(ele));
+
+                var arr2 = [45,1,5484,48,74,482,451];
+                console.log("arr2 sort :- "+arr2.sort());
+                var arr3 = arr.concat(arr2);
+                console.log(arr3);
+                console.log(arr3.sort());
+
+                arr2.push(15);  // insert element at end
+                arr2.push(16);
+                console.log(arr2);
+                
+                arr2.pop(); // removes from last
+                console.log(arr2);
+                arr2.shift(); // remove from front
+                console.log(arr2);
+                
+                arr2.splice(2,3); // loc: 2 and removes next 3 elements 
+                console.log(arr2);
+                
+                // task
+                // include, find , filter, join
+
+                
+            }
+            doThings();
+        </script>
+    </head>
+
+</html>
